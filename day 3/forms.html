@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table>
+    <tr>
+        <td>Name:</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td><input type="email"></td>
+    </tr>
+    <tr>
+        <td>Password:</td>
+        <td><input type="password"></td>
+    </tr>
+    <tr>
+        <td>Address:</td>
+        <td><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td>Gender:</td>
+        <td>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+        </td>
+    </tr>
+    <tr>
+        <td>Division:</td>
+        <td>
+            <select>
+                <option>--Select Your Division--</option>
+                <option>Dhaka</option>
+                <option>Borishal</option>
+                <option>Sylhet</option>
+                <option>Noakhali</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="Register"></td>
+        <td><button>Login</button></td>
+    </tr>
+</table>
+
+<hr>
+Name: <input type="text"> <br>
+Email: <input type="email"> <br>
+Mobile: <input type="number"> <br>
+Password: <input type="password"> <br>
+Address: <textarea rows="5" cols="30"></textarea> <br>
+Gender: <input type="radio" name="gender"> Male <input type="radio" name="gender"> Female <br>
+Dept: <input type="checkbox"> CSE <input type="checkbox"> BBA <br>
+Division:
+<select>
+    <option>--Select Your Division--</option>
+    <option>Dhaka</option>
+    <option>Borishal</option>
+    <option>Sylhet</option>
+    <option>Noakhali</option>
+</select>
+<br>
+District:
+<select>
+    <option>--Select Your District--</option>
+    <optgroup label="Dhaka">
+        <option>Dhaka</option>
+        <option>Gajipur</option>
+        <option>Narayanganj</option>
+    </optgroup>
+    <optgroup label="Sylhet">
+        <option>Sunamgonj</option>
+        <option>Hobigonj</option>
+        <option>Sylhet</option>
+    </optgroup>
+</select>
+<br>
+<input list="division">
+<datalist id="division">
+    <option>Dhaka</option>
+    <option>Borishal</option>
+    <option>Sylhet</option>
+    <option>Noakhali</option>
+</datalist>
+<br>
+Date of birth: <input type="datetime-local">
+<br>
+<input type="submit" value="Register">
+<button>Login</button>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
