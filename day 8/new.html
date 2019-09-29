@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>First Name:</td>
+        <td><input type="text" id="firstNumber"></td>
+    </tr>
+    <tr>
+        <td>Last Name:</td>
+        <td><input type="text" id="lastNumber"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" id="btn" value="Submit"></td>
+    </tr>
+    <tr>
+        <td>Full Name is:</td>
+        <td><textarea id="result" rows="5" cols="20"></textarea></td>
+    </tr>
+</table>
+
+<script>
+
+    var btn = document.getElementById('btn');
+
+    btn.onclick = function () {
+        var firstNameValue = document.getElementById('firstNumber').value;
+        var lastNameValue = document.getElementById('lastNumber').value;
+
+        var res=' ';
+        for(x=firstNameValue;x<=lastNameValue;x++){
+            res+=x+" ";
+        }
+
+        document.getElementById("result").value = res;
+
+
+
+    }
+
+    // document.write("Hello World")
+    // //alert("Hello from alert")
+    // console.log("Test")
+    //
+    // document.getElementById('head1').innerHTML = "Hello from script";
+    //
+    // //var
+    // //let
+    // //const
+    // document.write("<br>");
+    //
+    // var firstName = 'Sakib';
+    // var lastName = "Khan";
+    //
+    // document.write(firstName+' '+lastName)
+    //
+    // document.write("<br>");
+    //
+    // var x = 10;
+    // var y = 15;
+    //
+    // document.write(++x)  //11
+    // document.write("<br>");
+    // document.write(x++) //11 + 1
+    // document.write("<br>");
+    // document.write(++x) // 1+ 12
+    // document.write("<br>");
+    // document.write(x--)
+    // document.write("<br>");
+    // document.write(--x)
+
+    // var x = 30;
+    // var y = 20;
+    // var z = 40;
+    //
+    // document.write(x+=y); //x = x + y
+    // document.write("<br>");
+    // document.write(y-=x) //y = y - x
+    // document.write("<br>");
+    // document.write(z*=y)
+
+
+    //==, >, < , <=, >=,
+
+    // var x = 20;
+    // var y = 10;
+    // var z = 30;
+    //
+    // document.write((x==y) && (z>y))
+
+
+    // if(x<0){
+    //     document.write(x+" is correct");
+    // } else if(x<y){
+    //     document.write(y+ " is wrong");
+    // } else if(y==20){
+    //     document.write(y+ " is correct");
+    // } else {
+    //     document.write("Incorrect")
+    // }
+
+    // var x = prompt("What number do you want?");
+    // var y = 20;
+    //
+    // switch (x) {
+    //     case "2":
+    //         document.write("This is two");
+    //         break;
+    //     case 10:
+    //     case 5:
+    //         document.write("This is five");
+    //         alert("This is ten");
+    //         break;
+    //     case 15:
+    //         alert("fifteen");
+    //         break;
+    //     default:
+    //         document.write("Not found");
+    // }
+
+    // var age = prompt('How old are you?')
+    //
+    // document.write("You are "+age+" years old");
+    //
+    // var del = confirm("Are you sure to delete data?")
+    //
+    // document.write(del)
+
+    // for(x=10;x>=1;x--){
+    //     document.write("hello <br>")
+    // }
+
+    // var x = 1;
+    // while (x <= 10) {
+    //     document.write(x+"<br>");
+    //     x++;
+    // }
+
+    // var x = 1;
+    //
+    // do{
+    //     document.write(x+"<br>");
+    //     x++;
+    // } while (x < 10)
+
+    // var data = [];
+    //
+    // data[23] = 10;
+    // data[21] = 20;
+    // data[54] = 30;
+    //
+    // data['name'] = "Sakib";
+    //
+    // document.write(data[23]+" "+data['name'])
+
+    // var data = [10, 20, 30, 40, "Sakib khan", "Dhaka"];
+    //
+    // for(var key in data){
+    //     document.write(data[key]+"<br>");
+    // }
+
+    // function test(firstName,lastName){
+    //     // var firstName = "Sakib";
+    //     // var lastName = "Khan";
+    //
+    //     var fullName = firstName+" "+lastName
+    //
+    //     document.write(fullName);
+    // }
+    //
+    // test("roshid","khan");
+    // document.write("<br>");
+    // test("Sakib","Al hasan");
+    // document.write("<br>");
+    // test("Papon","Kakku");
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
