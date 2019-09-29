@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Odd Even ADD number</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="border border-secondary col-6">
+               <div class="display-4"> Odd Even calculator</div>
+                <hr>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="firstNumber" placeholder="Enter first number">
+                </div>
+                 <div class="form-group">
+                    <input type="number" class="form-control" id="lastNumber" placeholder="Enter last number greater than first number ">
+                </div>
+
+                <div class="form-group-inline">
+                    <div class="row">
+                        <button id="addId" class="btn btn-outline-warning col-3">+</button>
+                        <button id="subId" class="btn btn-outline-warning col-3">-</button>
+                        <button id="mulId" class="btn btn-outline-warning col-3">*</button>
+                        <button id="divId" class="btn btn-outline-warning col-3">/</button>
+                    </div>
+
+                </div>
+                 <div class="form-group-inline">
+                    <div class="row">
+                        <button id="evenId" class="btn btn-outline-warning col-3">Even numbers</button>
+                        <button id="oddId" class="btn btn-outline-warning col-3">Odd NUmbers</button>
+                        <button id="addEvenId" class="btn btn-outline-warning col-3">Add All even numbers</button>
+                        <button id="addOddId" class="btn btn-outline-warning col-3">Add All odd numbers</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class=" col-6 border border-secondary">
+                <div class="display-4 "> Result Display</div>
+                <hr>
+                <div class="" id="result">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // for addition
+      document.getElementById('addId').onclick = function(  ){
+          var firstValue =  document.getElementById('firstNumber').value;
+          var lastValue =  document.getElementById('lastNumber').value;
+          document.getElementById('result').innerText= parseFloat(firstValue) + parseFloat(lastValue);
+      }
+       // for subtraction
+      document.getElementById('subId').onclick = function(  ){
+          var firstValue =  document.getElementById('firstNumber').value;
+          var lastValue =  document.getElementById('lastNumber').value;
+          document.getElementById('result').innerText= parseFloat(lastValue) - parseFloat(firstValue);
+      }
+       // for
+      document.getElementById('mulId').onclick = function(  ){
+          var firstValue =  document.getElementById('firstNumber').value;
+          var lastValue =  document.getElementById('lastNumber').value;
+          document.getElementById('result').innerText= parseFloat(firstValue) * parseFloat(lastValue);
+      }
+       // for
+      document.getElementById('divId').onclick = function(  ){
+          var firstValue =  document.getElementById('firstNumber').value;
+          var lastValue =  document.getElementById('lastNumber').value;
+          document.getElementById('result').innerText= parseFloat(firstValue) / parseFloat(lastValue);
+      }
+    document.getElementById('evenId').onclick = function(  ){
+          var firstValue =  document.getElementById('firstNumber').value;
+          var lastValue =  document.getElementById('lastNumber').value;
+          var evenNumbers ="Even Numbers are : ";
+          for (x=firstValue; x<=lastValue; x++){
+              if( x % 2 == 0){
+                  evenNumbers += x +" ";
+              }
+          }
+          document.getElementById('result').innerText= evenNumbers;
+      }
+
+    document.getElementById('oddId').onclick = function(  ){
+          var firstValue =  document.getElementById('firstNumber').value;
+          var lastValue =  document.getElementById('lastNumber').value;
+          var oddNumbers ="Odd Numbers are : ";
+          for (x=firstValue; x<=lastValue; x++){
+              if( x % 2 == 1){
+                  oddNumbers += x +" ";
+              }
+          }
+          document.getElementById('result').innerText= oddNumbers;
+      }
+
+
+
+    document.getElementById('addEvenId').onclick = function(  ){
+          var firstValue =  document.getElementById('firstNumber').value;
+          var lastValue =  document.getElementById('lastNumber').value;
+          var addEvenNumbers =0;
+          for (x=firstValue; x<=lastValue; x++){
+              if(x % 2 == 0){
+                  addEvenNumbers += parseFloat(x);
+              }
+          }
+          document.getElementById('result').innerText= addEvenNumbers;
+      }
+
+    document.getElementById('addOddId').onclick = function(  ){
+          var firstValue =  document.getElementById('firstNumber').value;
+          var lastValue =  document.getElementById('lastNumber').value;
+          var addOdd = 0;
+          for (x=firstValue; x<=lastValue; x++){
+              if(x % 2 == 1){
+                  addOdd += parseFloat(x);
+              }
+          }
+          document.getElementById('result').innerText= addOdd;
+      }
+
+    </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</body>
+</html>
